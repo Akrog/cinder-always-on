@@ -14,6 +14,14 @@
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .center-list {
+          text-align: center;
+      }
+      .center-list ol {
+          margin: auto;
+          width: 50%;
+          text-align: left;
+      }
     </style>
   </head>
   <body>
@@ -32,10 +40,19 @@ OpenStack Ocata Summit
 
 ---
 
+class: middle, center-list
+
 # Agenda
 
-1. Foo
-2. Bar
+1. Overview of Cinder architecture
+2. HA of Cinder services
+   * cinder-volume considerations
+   * Live upgrades of services
+3. HA of storage
+   * Replication
+   * Migration
+4. Choosing storage backend
+5. Q&A
 
 ---
 
