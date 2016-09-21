@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="47cm" height="19cm" viewBox="-61 -21 922 362" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-60" y="-20" width="920" height="360"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-60" y="-20" width="920" height="360"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="400" y="163.9">
+      <tspan x="400" y="163.9"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #add8e6" x="0" y="140" width="144" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="0" y="140" width="144" height="40"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="72" y="163.9">
+      <tspan x="72" y="163.9">cinder-api</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #90ee90" x="240" y="140" width="144" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="240" y="140" width="144" height="40"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="312" y="163.9">
+      <tspan x="312" y="163.9">cinder-scheduler</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="440" y="80" width="144" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="440" y="80" width="144" height="40"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="512" y="103.9">
+      <tspan x="512" y="103.9">cinder-volume</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="440" y="200" width="144" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="440" y="200" width="144" height="40"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="512" y="223.9">
+      <tspan x="512" y="223.9">cinder-volume</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffa500" d="M 620 72.6667 C 636,63.1667 644,60 660,60 C 676,60 684,63.1667 700,72.6667 L 700,123.333 C 684,132.833 676,136 660,136 C 644,136 636,132.833 620,123.333 L 620,72.6667z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 72.6667 C 636,63.1667 644,60 660,60 C 676,60 684,63.1667 700,72.6667 L 700,123.333 C 684,132.833 676,136 660,136 C 644,136 636,132.833 620,123.333 L 620,72.6667"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 72.6667 C 636,82.1667 644,85.3333 660,85.3333 C 676,85.3333 684,82.1667 700,72.6667"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="660" y="100.333">
+      <tspan x="660" y="100.333">Storage</tspan>
+      <tspan x="660" y="116.333">Backend</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffa500" d="M 620 192.667 C 636,183.167 644,180 660,180 C 676,180 684,183.167 700,192.667 L 700,243.333 C 684,252.833 676,256 660,256 C 644,256 636,252.833 620,243.333 L 620,192.667z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 192.667 C 636,183.167 644,180 660,180 C 676,180 684,183.167 700,192.667 L 700,243.333 C 684,252.833 676,256 660,256 C 644,256 636,252.833 620,243.333 L 620,192.667"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 192.667 C 636,202.167 644,205.333 660,205.333 C 676,205.333 684,202.167 700,192.667"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="660" y="220.333">
+      <tspan x="660" y="220.333">Storage</tspan>
+      <tspan x="660" y="236.333">Backend</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="595.996" y1="218.865" x2="609.272" y2="218.686"/>
+    <polygon style="fill: #000000" points="595.929,213.865 585.997,219 596.064,223.864 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="595.929,213.865 585.997,219 596.064,223.864 "/>
+    <polygon style="fill: #000000" points="616.771,218.584 606.84,223.719 609.272,218.686 606.705,213.72 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="616.771,218.584 606.84,223.719 609.272,218.686 606.705,213.72 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="595.996" y1="98.8649" x2="609.272" y2="98.6855"/>
+    <polygon style="fill: #000000" points="595.929,93.8654 585.997,99 596.064,103.864 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="595.929,93.8654 585.997,99 596.064,103.864 "/>
+    <polygon style="fill: #000000" points="616.771,98.5842 606.84,103.719 609.272,98.6855 606.705,93.7197 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="616.771,98.5842 606.84,103.719 609.272,98.6855 606.705,93.7197 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="145" y1="150.045" x2="429.353" y2="111.27"/>
+    <polygon style="fill: #000000" points="436.785,110.257 427.552,116.562 429.353,111.27 426.201,106.654 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="436.785,110.257 427.552,116.562 429.353,111.27 426.201,106.654 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="145" y1="169.955" x2="429.353" y2="208.73"/>
+    <polygon style="fill: #000000" points="436.785,209.743 426.201,213.346 429.353,208.73 427.552,203.438 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="436.785,209.743 426.201,213.346 429.353,208.73 427.552,203.438 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="512" y1="131.991" x2="512" y2="189.273"/>
+    <polygon style="fill: #000000" points="517,131.991 512,121.991 507,131.991 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="517,131.991 512,121.991 507,131.991 "/>
+    <polygon style="fill: #000000" points="512,196.773 507,186.773 512,189.273 517,186.773 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="512,196.773 507,186.773 512,189.273 517,186.773 "/>
+  </g>
+</svg>

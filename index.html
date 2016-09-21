@@ -57,9 +57,10 @@ template: agenda_layout
 
 - Overview of Cinder Architecture
 - HA of Cinder Services
+  - cinder-volume A/A HA
 - Rolling Upgrades
 - HA of Storage: Replication
-- Cinder Insights
+- Tips & Tricks
 - Q&A
 
 ---
@@ -72,13 +73,81 @@ ARCHITECTURE OVERVIEW
 
 # Cinder Architecture
 
-## Click to add subtitle
+## A.K.A "Initial fork out of Nova."
 
-Insert paragraph of copy here. Do not exceed 40 words.
+.fill-width[![Insert graphic here](assets/architecture/architecture1.svg)]
 
-- Bullet
-- Bullet
-- Bullet
+---
+
+# Cinder Architecture
+
+## Status reporting and volume creation flow.
+
+.fill-width[![Insert graphic here](assets/architecture/architecture2.svg)]
+
+---
+
+# Cinder Architecture
+
+## Management of existing volumes.
+
+.fill-width[![Insert graphic here](assets/architecture/architecture3.svg)]
+
+---
+
+# Cinder Architecture
+
+## c-vol<->c-vol communication (e.g. migration).
+
+.fill-width[![Insert graphic here](assets/architecture/architecture4.svg)]
+
+---
+
+# Cinder Architecture
+
+## Host boundaries - local drivers: LVM, NFS, Block Device Driver (!)…
+
+.fill-width[![Insert graphic here](assets/architecture/architecture5.svg)]
+
+---
+
+# Cinder Architecture
+
+## cinder-backup service (optional).
+
+.fill-width[![Insert graphic here](assets/architecture/architecture6.svg)]
+
+---
+
+# Cinder Architecture
+
+## Pre-Mitaka flow - c-bak talks directly to backend (c-vol colocation).
+
+.fill-width[![Insert graphic here](assets/architecture/architecture7.svg)]
+
+---
+
+# Cinder Architecture
+
+## Post-Mitaka flow - c-bak communicates with c-vol.
+
+.fill-width[![Insert graphic here](assets/architecture/architecture8.svg)]
+
+---
+
+# Cinder Architecture
+
+## Post-Mitaka flow - c-bak communicates with c-vol.
+
+.fill-width[![Insert graphic here](assets/architecture/architecture9.svg)]
+
+---
+
+# Cinder Architecture
+
+## Host boundaries - remote driver (e.g. Ceph): remote storage device/backend.
+
+.fill-width[![Insert graphic here](assets/architecture/architecture10.svg)]
 
 ---
 
