@@ -175,27 +175,62 @@ ROLLING UPGRADES
 
 ---
 
-# Rolling Upgrades
+class: middle, center
 
-## Click to add subtitle
-
-Insert paragraph of copy here. Do not exceed 40 words.
-
-- Bullet
-- Bullet
-- Bullet
+# Allow Cinder deployments to be be upgraded in a live manner without introducing control plane or data plane downtime by letting the services to be upgraded one-by-one.
 
 ---
 
-# Rolling Upgrades with HA A/A
+# Rolling Upgrades
 
-## Click to add subtitle
+## Internals
 
-Leveraging Rolling Upgrades with HA A/A to have cinder Always On.
+- Online DB migrations (DB compatiblity)
+- RPC API versioning (communication API compatibility)
+- oslo.versionedobjects (communication payload compatiblity)
 
-- Bullet
-- Bullet
-- Bullet
+## Assumptions
+
+- Upgrade order: c-api, c-sch, c-vol, c-bak
+- No release skipping
+  - X release keeps compatibility with X-1, but not with X-2.
+- Continuous deployment from master is allowed.
+  - But some commits may be required to upgrade to before moving on.
+- You can achieve live upgrade only if you have a HA deployment.
+
+---
+
+# Rolling Upgrades
+
+## Preliminary
+* Having a container per service makes things easier.
+* Make sure there are no stale records in `services` table.
+* Read the release notes.
+
+## Upgrade steps (X to X+1)
+
+2. Apply X+1 database migrations.
+3. Upgrade your <strong>c-api</strong> services one-by-one.
+4. Upgrade your <strong>c-sch</strong> services one-by-one.
+5. Restart c-api services to make them detect new c-sch.
+6. Upgrade your <strong>c-vol</strong> nodes one-by-one.
+7. Restart c-api services and send SIGHUP to c-sch services to make them detect new c-vol.
+8. Upgrade your <strong>c-bak</strong> services one-by-one.
+9. Restart c-api services.
+10. Apply online data migrations (<em>not there yet in Newton</em>).
+
+---
+
+# Rolling Upgrades
+
+## Status in recent releases
+
+| From release | To release | Status               |
+|:------------:|:----------:|:--------------------:|
+| Kilo         | Liberty    | Impossible           |
+| Liberty      | Mitaka     | Experimental         |
+| Mitaka       | Newton     | Experimental+        |
+| Newton       | Ocata      | Supported and tested |
 
 ---
 
