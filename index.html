@@ -97,7 +97,7 @@ ARCHITECTURE OVERVIEW
 
 # Cinder Architecture
 
-## c-vol<->c-vol communication (e.g. migration).
+## cinder-volume<->cinder-volume communication (e.g. migration).
 
 .fill-width[![Insert graphic here](assets/architecture/architecture4.svg)]
 
@@ -121,7 +121,7 @@ ARCHITECTURE OVERVIEW
 
 # Cinder Architecture
 
-## Pre-Mitaka flow - c-bak talks directly to backend (c-vol colocation).
+## Pre-Mitaka flow - cinder-backup talks directly to backend (cinder-volume colocation).
 
 .fill-width[![Insert graphic here](assets/architecture/architecture7.svg)]
 
@@ -129,7 +129,7 @@ ARCHITECTURE OVERVIEW
 
 # Cinder Architecture
 
-## Post-Mitaka flow - c-bak communicates with c-vol.
+## Post-Mitaka flow - cinder-backup communicates with cinder-volume.
 
 .fill-width[![Insert graphic here](assets/architecture/architecture8.svg)]
 
@@ -137,7 +137,7 @@ ARCHITECTURE OVERVIEW
 
 # Cinder Architecture
 
-## Post-Mitaka flow - c-bak communicates with c-vol.
+## Post-Mitaka flow - cinder-bakup communicates with cinder-volume.
 
 .fill-width[![Insert graphic here](assets/architecture/architecture9.svg)]
 
@@ -185,14 +185,14 @@ class: middle, center
 
 ## Internals
 
-- Online DB migrations (DB compatiblity)
-- RPC API versioning (communication API compatibility)
-- oslo.versionedobjects (communication payload compatiblity)
+- Online DB migrations (DB compatiblity).
+- RPC API versioning (communication API compatibility).
+- oslo.versionedobjects (communication payload compatiblity).
 
 ## Assumptions
 
-- Upgrade order: c-api, c-sch, c-vol, c-bak
-- No release skipping
+- Upgrade order: cinder-api, cinder-scheduler, cinder-volume, cinder-bakup.
+- No release skipping.
   - X release keeps compatibility with X-1, but not with X-2.
 - Continuous deployment from master is allowed.
   - But some commits may be required to upgrade to before moving on.
@@ -205,18 +205,18 @@ class: middle, center
 ## Preliminary
 * Having a container per service makes things easier.
 * Make sure there are no stale records in `services` table.
-* Read the release notes.
+* Read the release notes before starting.
 
 ## Upgrade steps (X to X+1)
 
 2. Apply X+1 database migrations.
-3. Upgrade your <strong>c-api</strong> services one-by-one.
-4. Upgrade your <strong>c-sch</strong> services one-by-one.
-5. Restart c-api services to make them detect new c-sch.
-6. Upgrade your <strong>c-vol</strong> nodes one-by-one.
-7. Restart c-api services and send SIGHUP to c-sch services to make them detect new c-vol.
-8. Upgrade your <strong>c-bak</strong> services one-by-one.
-9. Restart c-api services.
+3. Upgrade your <strong>cinder-api</strong> services one-by-one.
+4. Upgrade your <strong>cinder-scheduler</strong> services one-by-one.
+5. Restart cinder-api services to make them detect new cinder-scheduler.
+6. Upgrade your <strong>cinder-volume</strong> nodes one-by-one.
+7. Restart cinder-api services and send SIGHUP to cinder-scheduler and cinder-volume services to make them detect new cinder-volumes.
+8. Upgrade your <strong>cinder-backup</strong> services one-by-one.
+9. Restart cinder-api services.
 10. Apply online data migrations (<em>not there yet in Newton</em>).
 
 ---
