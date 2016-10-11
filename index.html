@@ -157,15 +157,76 @@ HIGH AVAILABILITY
 
 ---
 
-# Cinder Services
+# HA of Cinder services
 
-## Click to add subtitle
+## cinder-api
 
-Insert paragraph of copy here. Do not exceed 40 words.
+.left-column[
+- Run multiple instances behind a HAProxy.
+- Be advised of API race conditions in pre-Newton cinder-api.
+]
 
-- Bullet
-- Bullet
-- Bullet
+.right-column[
+![Insert graphic here](assets/ha/haproxy.svg)
+]
+
+---
+
+# HA of Cinder services
+
+## cinder-api race conditions
+
+### Before
+
+```python
+vol = db.volume_get(ctxt, id)
+if vol.status not in ('available', 'in-use'):
+    db.volume_upgrade(ctxt, id, status='retyping')
+```
+
+### After
+
+```python
+expected = {'status': ('available', 'in-use')}
+updates = {'status': 'retyping'}
+
+if not volume.conditional_update(updates, expected, None):
+    LOG.error(_('Retype needs volume to be in available or in-use state.')
+    raise exception.InvalidVolume(reason=msg)
+```
+
+---
+
+# HA of Cinder services
+
+## cinder-scheduler
+
+.left-column[
+- You are be able to run multiple instances of cinder-scheduler in A/A fashion.
+- Be advised that cinder-scheduler shares similar scaling issues as nova-scheduler.
+]
+
+.right-column[
+![Insert graphic here](assets/ha/c-sch.svg)
+]
+
+---
+
+# HA of Cinder services
+
+## cinder-volume
+
+TODO: To be extended by Gorka.
+
+---
+
+# HA of Cinder services
+
+## cinder-backup
+
+TODO: Gorka? Key talking points:
+- Scalable backup service since Mitaka.
+- Improvements related to c-vol A/A?
 
 ---
 
@@ -175,15 +236,9 @@ ROLLING UPGRADES
 
 ---
 
-class: middle, center
-
-# Allow Cinder deployments to be be upgraded in a live manner without introducing control plane or data plane downtime by letting the services to be upgraded one-by-one.
-
----
-
 # Rolling Upgrades
 
-## Internals
+## Elements
 
 - Online DB migrations (DB compatiblity).
 - RPC API versioning (communication API compatibility).
@@ -193,31 +248,117 @@ class: middle, center
 
 - Upgrade order: cinder-api, cinder-scheduler, cinder-volume, cinder-bakup.
 - No release skipping.
-  - X release keeps compatibility with X-1, but not with X-2.
 - Continuous deployment from master is allowed.
-  - But some commits may be required to upgrade to before moving on.
 - You can achieve live upgrade only if you have a HA deployment.
+
+## Tips
+- Having each service deployed in container makes things easier.
+- Make sure there are no stale records in `services` table.
+- Read the release notes before starting.
 
 ---
 
 # Rolling Upgrades
 
-## Preliminary
-* Having a container per service makes things easier.
-* Make sure there are no stale records in `services` table.
-* Read the release notes before starting.
+## Upgrade procedure (X to X+1).
 
-## Upgrade steps (X to X+1)
+.fill-width[![Insert graphic here](assets/upgrades/upgrade1.svg)]
 
-2. Apply X+1 database migrations.
-3. Upgrade your <strong>cinder-api</strong> services one-by-one.
-4. Upgrade your <strong>cinder-scheduler</strong> services one-by-one.
-5. Restart cinder-api services to make them detect new cinder-scheduler.
-6. Upgrade your <strong>cinder-volume</strong> nodes one-by-one.
-7. Restart cinder-api services and send SIGHUP to cinder-scheduler and cinder-volume services to make them detect new cinder-volumes.
-8. Upgrade your <strong>cinder-backup</strong> services one-by-one.
-9. Restart cinder-api services.
-10. Apply online data migrations (<em>not there yet in Newton</em>).
+---
+
+# Rolling Upgrades
+
+## 1. Apply DB schema migrations.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade2.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 2. Upgrade cinder-api services one-by-one.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade3.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 2. Upgrade cinder-api services one-by-one.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade4.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 2. Upgrade cinder-api services one-by-one.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade5.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 3. Upgrade cinder-scheduler services one-by-one.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade6.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 3. Upgrade cinder-scheduler services one-by-one.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade7.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 4. Upgrade cinder-volume service.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade8.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 4. Upgrade cinder-volume service.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade9.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 5. Upgrade cinder-backup services one-by-one.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade10.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 5. Upgrade cinder-backup services one-by-one.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade11.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 6. Restart cinder-api services and send SIGHUP to the rest.
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade12.svg)]
+
+---
+
+# Rolling Upgrades
+
+## 7. Start applying online data migrations (Newton->Ocata upgrade).
+
+.fill-width[![Insert graphic here](assets/upgrades/upgrade13.svg)]
 
 ---
 

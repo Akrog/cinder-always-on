@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="32cm" height="17cm" viewBox="198 158 623 323" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="200" y="160" width="620" height="320"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200" y="160" width="620" height="320"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="510" y="323.9">
+      <tspan x="510" y="323.9"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #507dbc" x="420" y="380" width="180" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="420" y="380" width="180" height="80"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="510" y="423.9">
+      <tspan x="510" y="423.9"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #507dbc" x="220" y="380" width="180" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="220" y="380" width="180" height="80"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="310" y="423.9">
+      <tspan x="310" y="423.9"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #507dbc" x="620" y="380" width="180" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="620" y="380" width="180" height="80"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="710" y="423.9">
+      <tspan x="710" y="423.9"></tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #cccbd3" d="M 440 223.667 C 468,205.917 482,200 510,200 C 538,200 552,205.917 580,223.667 L 580,318.333 C 552,336.083 538,342 510,342 C 482,342 468,336.083 440,318.333 L 440,223.667z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 440 223.667 C 468,205.917 482,200 510,200 C 538,200 552,205.917 580,223.667 L 580,318.333 C 552,336.083 538,342 510,342 C 482,342 468,336.083 440,318.333 L 440,223.667"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 440 223.667 C 468,241.417 482,247.333 510,247.333 C 538,247.333 552,241.417 580,223.667"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="510" y="286.833">
+      <tspan x="510" y="286.833">RabbitMQ</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #f7a88a" x="440" y="400" width="144" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="440" y="400" width="144" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="512" y="424.4">
+      <tspan x="512" y="424.4">cinder-scheduler</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #f7a88a" x="640" y="400" width="144" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="640" y="400" width="144" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="712" y="424.4">
+      <tspan x="712" y="424.4">cinder-scheduler</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #f7a88a" x="240" y="400" width="144" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="240" y="400" width="144" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="312" y="424.4">
+      <tspan x="312" y="424.4">cinder-scheduler</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="348.694" y1="392.387" x2="435.258" y2="327.245"/>
+    <polygon style="fill: #000000" points="345.687,388.392 340.703,398.4 351.7,396.382 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="345.687,388.392 340.703,398.4 351.7,396.382 "/>
+    <polygon style="fill: #000000" points="441.251,322.736 436.267,332.744 435.258,327.245 430.254,324.753 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="441.251,322.736 436.267,332.744 435.258,327.245 430.254,324.753 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="511.571" y1="388.002" x2="511.097" y2="352.707"/>
+    <polygon style="fill: #000000" points="506.571,388.07 511.705,398.001 516.57,387.935 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="506.571,388.07 511.705,398.001 516.57,387.935 "/>
+    <polygon style="fill: #000000" points="510.996,345.208 516.13,355.14 511.097,352.707 506.131,355.274 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="510.996,345.208 516.13,355.14 511.097,352.707 506.131,355.274 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="674.68" y1="392.472" x2="585.522" y2="326.707"/>
+    <polygon style="fill: #000000" points="671.712,396.496 682.727,398.408 677.648,388.448 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="671.712,396.496 682.727,398.408 677.648,388.448 "/>
+    <polygon style="fill: #000000" points="579.486,322.255 590.502,324.167 585.522,326.707 584.566,332.215 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="579.486,322.255 590.502,324.167 585.522,326.707 584.566,332.215 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="712" y="320">
+    <tspan x="712" y="320"></tspan>
+  </text>
+  <g>
+    <rect style="fill: #f7a88a" x="660" y="220" width="144" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="660" y="220" width="144" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="732" y="244.4">
+      <tspan x="732" y="244.4">cinder-volume</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #f7a88a" x="220" y="220" width="144" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="220" y="220" width="144" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="292" y="244.4">
+      <tspan x="292" y="244.4">cinder-api</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="365.002" y1="250.381" x2="429.355" y2="259.532"/>
+    <polygon style="fill: #000000" points="436.781,260.588 426.176,264.13 429.355,259.532 427.584,254.23 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="436.781,260.588 426.176,264.13 429.355,259.532 427.584,254.23 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="659.021" y1="250.191" x2="590.589" y2="259.747"/>
+    <polygon style="fill: #000000" points="583.161,260.784 592.374,254.449 590.589,259.747 593.757,264.353 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="583.161,260.784 592.374,254.449 590.589,259.747 593.757,264.353 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="510" y="320">
+    <tspan x="510" y="320"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="510" y="320">
+    <tspan x="510" y="320"></tspan>
+  </text>
+</svg>
