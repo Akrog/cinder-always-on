@@ -9,17 +9,17 @@
     </text>
   </g>
   <g>
-    <rect style="fill: #ad7fa8" x="-20" y="60" width="420" height="200"/>
+    <rect style="fill: #cccbd3" x="-20" y="60" width="420" height="200"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-20" y="60" width="420" height="200"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="190" y="163.9">
-      <tspan x="190" y="163.9"></tspan>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="190" y="164.4">
+      <tspan x="190" y="164.4"></tspan>
     </text>
   </g>
   <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="190" y="160">
     <tspan x="190" y="160"></tspan>
   </text>
   <g>
-    <rect style="fill: #fce94f" x="420" y="0" width="300" height="140"/>
+    <rect style="fill: #507dbc" x="420" y="0" width="300" height="140"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="420" y="0" width="300" height="140"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="570" y="73.9">
       <tspan x="570" y="73.9"></tspan>
@@ -29,24 +29,24 @@
     <tspan x="190" y="160"></tspan>
   </text>
   <g>
-    <rect style="fill: #fce94f" x="420" y="180" width="300" height="140"/>
+    <rect style="fill: #507dbc" x="420" y="180" width="300" height="140"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="420" y="180" width="300" height="140"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="570" y="253.9">
       <tspan x="570" y="253.9"></tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #ad7fa8" x="40" y="280" width="121" height="38"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="40" y="280" width="121" height="38"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="100.5" y="302.9">
-      <tspan x="100.5" y="302.9">Controller node</tspan>
+    <rect style="fill: #cccbd3" x="39.025" y="280" width="122.95" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="39.025" y="280" width="122.95" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="100.5" y="303.4">
+      <tspan x="100.5" y="303.4">Controller node</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #fce94f" x="220" y="280" width="124.1" height="38"/>
+    <rect style="fill: #507dbc" x="220" y="280" width="124.1" height="38"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="220" y="280" width="124.1" height="38"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="282.05" y="302.9">
-      <tspan x="282.05" y="302.9">Storage node</tspan>
+    <text font-size="12.8" style="fill: #ffffff;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="282.05" y="303.4">
+      <tspan x="282.05" y="303.4">Storage node</tspan>
     </text>
   </g>
   <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="100.5" y="299">
@@ -58,47 +58,47 @@
     <tspan x="100.5" y="299"></tspan>
   </text>
   <g>
-    <rect style="fill: #add8e6" x="0" y="140" width="144" height="40"/>
+    <rect style="fill: #f7a88a" x="0" y="140" width="144" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="0" y="140" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="72" y="163.9">
-      <tspan x="72" y="163.9">cinder-api</tspan>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="72" y="164.4">
+      <tspan x="72" y="164.4">cinder-api</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #90ee90" x="240" y="140" width="144" height="40"/>
+    <rect style="fill: #f7a88a" x="240" y="140" width="144" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="240" y="140" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="312" y="163.9">
-      <tspan x="312" y="163.9">cinder-scheduler</tspan>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="312" y="164.4">
+      <tspan x="312" y="164.4">cinder-scheduler</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #ffff00" x="440" y="80" width="144" height="40"/>
+    <rect style="fill: #ffc192" x="440" y="80" width="144" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="440" y="80" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="512" y="103.9">
-      <tspan x="512" y="103.9">cinder-volume</tspan>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="512" y="104.4">
+      <tspan x="512" y="104.4">cinder-volume</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #ffff00" x="440" y="200" width="144" height="40"/>
+    <rect style="fill: #ffc192" x="440" y="200" width="144" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="440" y="200" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="512" y="223.9">
-      <tspan x="512" y="223.9">cinder-volume</tspan>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="512" y="224.4">
+      <tspan x="512" y="224.4">cinder-volume</tspan>
     </text>
   </g>
   <g>
-    <path style="fill: #ffa500" d="M 620 72.6667 C 636,63.1667 644,60 660,60 C 676,60 684,63.1667 700,72.6667 L 700,123.333 C 684,132.833 676,136 660,136 C 644,136 636,132.833 620,123.333 L 620,72.6667z"/>
+    <path style="fill: #ffc192" d="M 620 72.6667 C 636,63.1667 644,60 660,60 C 676,60 684,63.1667 700,72.6667 L 700,123.333 C 684,132.833 676,136 660,136 C 644,136 636,132.833 620,123.333 L 620,72.6667z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 72.6667 C 636,63.1667 644,60 660,60 C 676,60 684,63.1667 700,72.6667 L 700,123.333 C 684,132.833 676,136 660,136 C 644,136 636,132.833 620,123.333 L 620,72.6667"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 72.6667 C 636,82.1667 644,85.3333 660,85.3333 C 676,85.3333 684,82.1667 700,72.6667"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="660" y="100.333">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="660" y="100.333">
       <tspan x="660" y="100.333">Storage</tspan>
       <tspan x="660" y="116.333">Backend</tspan>
     </text>
   </g>
   <g>
-    <path style="fill: #ffa500" d="M 620 192.667 C 636,183.167 644,180 660,180 C 676,180 684,183.167 700,192.667 L 700,243.333 C 684,252.833 676,256 660,256 C 644,256 636,252.833 620,243.333 L 620,192.667z"/>
+    <path style="fill: #ffc192" d="M 620 192.667 C 636,183.167 644,180 660,180 C 676,180 684,183.167 700,192.667 L 700,243.333 C 684,252.833 676,256 660,256 C 644,256 636,252.833 620,243.333 L 620,192.667z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 192.667 C 636,183.167 644,180 660,180 C 676,180 684,183.167 700,192.667 L 700,243.333 C 684,252.833 676,256 660,256 C 644,256 636,252.833 620,243.333 L 620,192.667"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 192.667 C 636,202.167 644,205.333 660,205.333 C 676,205.333 684,202.167 700,192.667"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="660" y="220.333">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="660" y="220.333">
       <tspan x="660" y="220.333">Storage</tspan>
       <tspan x="660" y="236.333">Backend</tspan>
     </text>
