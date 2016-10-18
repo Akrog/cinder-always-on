@@ -181,7 +181,7 @@ HIGH AVAILABILITY
 ```python
 vol = db.volume_get(ctxt, id)
 if vol.status not in ('available', 'in-use'):
-    db.volume_upgrade(ctxt, id, status='retyping')
+    db.volume_update(ctxt, id, status='retyping')
 ```
 
 ### After
