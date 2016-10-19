@@ -23,6 +23,13 @@
     </text>
   </g>
   <g>
+    <rect style="fill: #f7a88a" x="540" y="0" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="0" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="24.4">
+      <tspan x="610" y="24.4">cinder-volume</tspan>
+    </text>
+  </g>
+  <g>
     <path style="fill: #add8e6" d="M 740 12.6667 C 756,3.16667 764,0 780,0 C 796,0 804,3.16667 820,12.6667 L 820,63.3333 C 804,72.8333 796,76 780,76 C 764,76 756,72.8333 740,63.3333 L 740,12.6667z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 740 12.6667 C 756,3.16667 764,0 780,0 C 796,0 804,3.16667 820,12.6667 L 820,63.3333 C 804,72.8333 796,76 780,76 C 764,76 756,72.8333 740,63.3333 L 740,12.6667"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 740 12.6667 C 756,22.1667 764,25.3333 780,25.3333 C 796,25.3333 804,22.1667 820,12.6667"/>
@@ -110,13 +117,6 @@
   <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="230" y="299">
     <tspan x="230" y="299"></tspan>
   </text>
-  <g>
-    <rect style="fill: #507dbc" x="540" y="160" width="140" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="160" width="140" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="184.4">
-      <tspan x="610" y="184.4">cinder-backup</tspan>
-    </text>
-  </g>
   <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="398.178" y="14.5421">
     <tspan x="398.178" y="14.5421"></tspan>
   </text>

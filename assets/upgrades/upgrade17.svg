@@ -23,6 +23,13 @@
     </text>
   </g>
   <g>
+    <rect style="fill: #f7a88a" x="540" y="0" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="0" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="24.4">
+      <tspan x="610" y="24.4">cinder-volume</tspan>
+    </text>
+  </g>
+  <g>
     <path style="fill: #add8e6" d="M 740 12.6667 C 756,3.16667 764,0 780,0 C 796,0 804,3.16667 820,12.6667 L 820,63.3333 C 804,72.8333 796,76 780,76 C 764,76 756,72.8333 740,63.3333 L 740,12.6667z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 740 12.6667 C 756,3.16667 764,0 780,0 C 796,0 804,3.16667 820,12.6667 L 820,63.3333 C 804,72.8333 796,76 780,76 C 764,76 756,72.8333 740,63.3333 L 740,12.6667"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 740 12.6667 C 756,22.1667 764,25.3333 780,25.3333 C 796,25.3333 804,22.1667 820,12.6667"/>
@@ -32,14 +39,14 @@
     </text>
   </g>
   <g>
-    <rect style="fill: #507dbc" x="540" y="280" width="140" height="40"/>
+    <rect style="fill: #f7a88a" x="540" y="280" width="140" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="280" width="140" height="40"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="304.4">
       <tspan x="610" y="304.4">cinder-backup</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #507dbc" x="540" y="220" width="140" height="40"/>
+    <rect style="fill: #f7a88a" x="540" y="220" width="140" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="220" width="140" height="40"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="244.4">
       <tspan x="610" y="244.4">cinder-backup</tspan>
@@ -111,7 +118,7 @@
     <tspan x="230" y="299"></tspan>
   </text>
   <g>
-    <rect style="fill: #507dbc" x="540" y="160" width="140" height="40"/>
+    <rect style="fill: #f7a88a" x="540" y="160" width="140" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="160" width="140" height="40"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="184.4">
       <tspan x="610" y="184.4">cinder-backup</tspan>
@@ -145,5 +152,31 @@
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="327.85" y="303.4">
       <tspan x="327.85" y="303.4">non-Cinder</tspan>
     </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="194.719" y1="26.0816" x2="194.929" y2="66.8435"/>
+    <polygon style="fill: #000000" points="194.967,74.3434 189.916,64.3692 194.929,66.8435 199.916,64.3178 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="194.967,74.3434 189.916,64.3692 194.929,66.8435 199.916,64.3178 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Montserrat;font-style:normal;font-weight:normal" x="172.316" y="20.6074">
+    <tspan x="172.316" y="20.6074">Restart</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="392.104" y1="25.4742" x2="391.965" y2="65.8294"/>
+    <polygon style="fill: #000000" points="391.94,73.3293 386.974,63.3122 391.965,65.8294 396.974,63.3466 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="391.94,73.3293 386.974,63.3122 391.965,65.8294 396.974,63.3466 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Montserrat;font-style:normal;font-weight:normal" x="369.268" y="19.5932">
+    <tspan x="369.268" y="19.5932">SIGHUP</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="421.864" y1="16.3641" x2="526.916" y2="16.3641"/>
+    <polygon style="fill: #000000" points="534.416,16.3641 524.416,21.3641 526.916,16.3641 524.416,11.3641 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="534.416,16.3641 524.416,21.3641 526.916,16.3641 524.416,11.3641 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="415.79" y1="23.6522" x2="531.706" y2="158.991"/>
+    <polygon style="fill: #000000" points="536.585,164.687 526.282,160.344 531.706,158.991 533.877,153.839 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="536.585,164.687 526.282,160.344 531.706,158.991 533.877,153.839 "/>
   </g>
 </svg>

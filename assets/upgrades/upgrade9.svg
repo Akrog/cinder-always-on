@@ -9,28 +9,28 @@
     </text>
   </g>
   <g>
-    <rect style="fill: #f7a88a" x="120" y="140" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120" y="140" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="192" y="164.4">
-      <tspan x="192" y="164.4">cinder-api</tspan>
+    <rect style="fill: #f7a88a" x="120" y="140" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120" y="140" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="190" y="164.4">
+      <tspan x="190" y="164.4">cinder-api</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #f7a88a" x="320" y="140" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="140" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="392" y="164.4">
-      <tspan x="392" y="164.4">cinder-scheduler</tspan>
+    <rect style="fill: #507dbc" x="320" y="140" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="140" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="390" y="164.4">
+      <tspan x="390" y="164.4">cinder-scheduler</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #f7a88a" x="540" y="0" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="0" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="612" y="24.4">
-      <tspan x="612" y="24.4">cinder-volume</tspan>
+    <rect style="fill: #507dbc" x="540" y="0" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="0" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="24.4">
+      <tspan x="610" y="24.4">cinder-volume</tspan>
     </text>
   </g>
   <g>
-    <path style="fill: #cccbd3" d="M 740 12.6667 C 756,3.16667 764,0 780,0 C 796,0 804,3.16667 820,12.6667 L 820,63.3333 C 804,72.8333 796,76 780,76 C 764,76 756,72.8333 740,63.3333 L 740,12.6667z"/>
+    <path style="fill: #add8e6" d="M 740 12.6667 C 756,3.16667 764,0 780,0 C 796,0 804,3.16667 820,12.6667 L 820,63.3333 C 804,72.8333 796,76 780,76 C 764,76 756,72.8333 740,63.3333 L 740,12.6667z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 740 12.6667 C 756,3.16667 764,0 780,0 C 796,0 804,3.16667 820,12.6667 L 820,63.3333 C 804,72.8333 796,76 780,76 C 764,76 756,72.8333 740,63.3333 L 740,12.6667"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 740 12.6667 C 756,22.1667 764,25.3333 780,25.3333 C 796,25.3333 804,22.1667 820,12.6667"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="780" y="40.3333">
@@ -39,21 +39,21 @@
     </text>
   </g>
   <g>
-    <rect style="fill: #507dbc" x="540" y="280" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="280" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="612" y="304.4">
-      <tspan x="612" y="304.4">cinder-backup</tspan>
+    <rect style="fill: #507dbc" x="540" y="280" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="280" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="304.4">
+      <tspan x="610" y="304.4">cinder-backup</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #507dbc" x="540" y="220" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="220" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="612" y="244.4">
-      <tspan x="612" y="244.4">cinder-backup</tspan>
+    <rect style="fill: #507dbc" x="540" y="220" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="220" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="244.4">
+      <tspan x="610" y="244.4">cinder-backup</tspan>
     </text>
   </g>
   <g>
-    <path style="fill: #cccbd3" d="M 740 212.667 C 756,203.167 764,200 780,200 C 796,200 804,203.167 820,212.667 L 820,263.333 C 804,272.833 796,276 780,276 C 764,276 756,272.833 740,263.333 L 740,212.667z"/>
+    <path style="fill: #add8e6" d="M 740 212.667 C 756,203.167 764,200 780,200 C 796,200 804,203.167 820,212.667 L 820,263.333 C 804,272.833 796,276 780,276 C 764,276 756,272.833 740,263.333 L 740,212.667z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 740 212.667 C 756,203.167 764,200 780,200 C 796,200 804,203.167 820,212.667 L 820,263.333 C 804,272.833 796,276 780,276 C 764,276 756,272.833 740,263.333 L 740,212.667"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 740 212.667 C 756,222.167 764,225.333 780,225.333 C 796,225.333 804,222.167 820,212.667"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="780" y="240.333">
@@ -62,82 +62,95 @@
     </text>
   </g>
   <g>
-    <rect style="fill: #f7a88a" x="320" y="80" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="80" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="392" y="104.4">
-      <tspan x="392" y="104.4">cinder-scheduler</tspan>
+    <rect style="fill: #f7a88a" x="320" y="80" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="80" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="390" y="104.4">
+      <tspan x="390" y="104.4">cinder-scheduler</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #f7a88a" x="320" y="200" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="200" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="392" y="224.4">
-      <tspan x="392" y="224.4">cinder-scheduler</tspan>
+    <rect style="fill: #507dbc" x="320" y="200" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="200" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="390" y="224.4">
+      <tspan x="390" y="224.4">cinder-scheduler</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #cccbd3" x="-20" y="80" width="80" height="160"/>
+    <rect style="fill: #add8e6" x="-20" y="80" width="80" height="160"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-20" y="80" width="80" height="160"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="20" y="164.4">
       <tspan x="20" y="164.4">HAProxy</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #f7a88a" x="120" y="80" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120" y="80" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="192" y="104.4">
-      <tspan x="192" y="104.4">cinder-api</tspan>
+    <rect style="fill: #f7a88a" x="120" y="200" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120" y="200" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="190" y="224.4">
+      <tspan x="190" y="224.4">cinder-api</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #f7a88a" x="120" y="200" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120" y="200" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="192" y="224.4">
-      <tspan x="192" y="224.4">cinder-api</tspan>
+    <path style="fill: #f7a88a" d="M 640 73.3333 C 656,63.3333 664,60 680,60 C 696,60 704,63.3333 720,73.3333 L 720,126.667 C 704,136.667 696,140 680,140 C 664,140 656,136.667 640,126.667 L 640,73.3333z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 640 73.3333 C 656,63.3333 664,60 680,60 C 696,60 704,63.3333 720,73.3333 L 720,126.667 C 704,136.667 696,140 680,140 C 664,140 656,136.667 640,126.667 L 640,73.3333"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 640 73.3333 C 656,83.3333 664,86.6667 680,86.6667 C 696,86.6667 704,83.3333 720,73.3333"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="680" y="110.667">
+      <tspan x="680" y="110.667">Database</tspan>
     </text>
   </g>
   <g>
-    <path style="fill: #cccbd3" d="M 520 72.6667 C 536,63.1667 544,60 560,60 C 576,60 584,63.1667 600,72.6667 L 600,123.333 C 584,132.833 576,136 560,136 C 544,136 536,132.833 520,123.333 L 520,72.6667z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 520 72.6667 C 536,63.1667 544,60 560,60 C 576,60 584,63.1667 600,72.6667 L 600,123.333 C 584,132.833 576,136 560,136 C 544,136 536,132.833 520,123.333 L 520,72.6667"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 520 72.6667 C 536,82.1667 544,85.3333 560,85.3333 C 576,85.3333 584,82.1667 600,72.6667"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="560" y="100.333">
-      <tspan x="560" y="100.333">Message</tspan>
-      <tspan x="560" y="116.333">Queue</tspan>
+    <rect style="fill: #507dbc" x="120" y="280" width="60" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120" y="280" width="60" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="150" y="303.4">
+      <tspan x="150" y="303.4">X</tspan>
     </text>
   </g>
   <g>
-    <path style="fill: #f7a88a" d="M 620 72.6667 C 636,63.1667 644,60 660,60 C 676,60 684,63.1667 700,72.6667 L 700,123.333 C 684,132.833 676,136 660,136 C 644,136 636,132.833 620,123.333 L 620,72.6667z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 72.6667 C 636,63.1667 644,60 660,60 C 676,60 684,63.1667 700,72.6667 L 700,123.333 C 684,132.833 676,136 660,136 C 644,136 636,132.833 620,123.333 L 620,72.6667"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 620 72.6667 C 636,82.1667 644,85.3333 660,85.3333 C 676,85.3333 684,82.1667 700,72.6667"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="660" y="108.333">
-      <tspan x="660" y="108.333">Database</tspan>
+    <rect style="fill: #f7a88a" x="200" y="280" width="60" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200" y="280" width="60" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="230" y="303.4">
+      <tspan x="230" y="303.4">X+1</tspan>
     </text>
   </g>
-  <g>
-    <rect style="fill: #507dbc" x="140" y="280" width="60" height="38"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="140" y="280" width="60" height="38"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="170" y="303.4">
-      <tspan x="170" y="303.4">X</tspan>
-    </text>
-  </g>
-  <g>
-    <rect style="fill: #f7a88a" x="220" y="280" width="60" height="38"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="220" y="280" width="60" height="38"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="250" y="303.4">
-      <tspan x="250" y="303.4">X+1</tspan>
-    </text>
-  </g>
-  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="170" y="299">
-    <tspan x="170" y="299"></tspan>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="150" y="299">
+    <tspan x="150" y="299"></tspan>
   </text>
-  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="250" y="299">
-    <tspan x="250" y="299"></tspan>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="230" y="299">
+    <tspan x="230" y="299"></tspan>
   </text>
   <g>
-    <rect style="fill: #507dbc" x="540" y="160" width="144" height="40"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="160" width="144" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="612" y="184.4">
-      <tspan x="612" y="184.4">cinder-backup</tspan>
+    <rect style="fill: #507dbc" x="540" y="160" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="540" y="160" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="610" y="184.4">
+      <tspan x="610" y="184.4">cinder-backup</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="398.178" y="14.5421">
+    <tspan x="398.178" y="14.5421"></tspan>
+  </text>
+  <g>
+    <rect style="fill: #f7a88a" x="120" y="80" width="140" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120" y="80" width="140" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="190" y="104.4">
+      <tspan x="190" y="104.4">cinder-api</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #add8e6" cx="544.725" cy="100" rx="44.7249" ry="40"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="544.725" cy="100" rx="44.7249" ry="40"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="544.725" y1="140" x2="589.45" y2="140"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="544.725" y="96">
+      <tspan x="544.725" y="96">Message</tspan>
+      <tspan x="544.725" y="112">Queue</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="544.725" y="108">
+    <tspan x="544.725" y="108"></tspan>
+  </text>
+  <g>
+    <rect style="fill: #add8e6" x="280" y="280" width="95.7" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="280" y="280" width="95.7" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="327.85" y="303.4">
+      <tspan x="327.85" y="303.4">non-Cinder</tspan>
     </text>
   </g>
 </svg>

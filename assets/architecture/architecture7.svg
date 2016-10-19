@@ -104,6 +104,14 @@
     </text>
   </g>
   <g>
+    <path style="fill: #f7a88a" d="M 0 87.3333 C 8,81.8333 12,80 20,80 C 28,80 32,81.8333 40,87.3333 L 40,116.667 C 32,122.167 28,124 20,124 C 12,124 8,122.167 0,116.667 L 0,87.3333z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 0 87.3333 C 8,81.8333 12,80 20,80 C 28,80 32,81.8333 40,87.3333 L 40,116.667 C 32,122.167 28,124 20,124 C 12,124 8,122.167 0,116.667 L 0,87.3333"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 0 87.3333 C 8,92.8333 12,94.6667 20,94.6667 C 28,94.6667 32,92.8333 40,87.3333"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="20" y="109.667">
+      <tspan x="20" y="109.667">DB</tspan>
+    </text>
+  </g>
+  <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="595.996" y1="218.865" x2="609.272" y2="218.686"/>
     <polygon style="fill: #000000" points="595.929,213.865 585.997,219 596.064,223.864 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="595.929,213.865 585.997,219 596.064,223.864 "/>
@@ -159,6 +167,9 @@
       <tspan x="780" y="296.333">Backend</tspan>
     </text>
   </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="20" y="102">
+    <tspan x="20" y="102"></tspan>
+  </text>
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="594.764" y1="269.734" x2="650.473" y2="258.006"/>
     <polygon style="fill: #000000" points="593.734,264.841 584.979,271.794 595.794,274.627 "/>

@@ -58,35 +58,35 @@
     <tspan x="100.5" y="299"></tspan>
   </text>
   <g>
-    <rect style="fill: #ffc192" x="0" y="140" width="144" height="40"/>
+    <rect style="fill: #f7a88a" x="0" y="140" width="144" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="0" y="140" width="144" height="40"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="72" y="164.4">
       <tspan x="72" y="164.4">cinder-api</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #ffc192" x="240" y="140" width="144" height="40"/>
+    <rect style="fill: #f7a88a" x="240" y="140" width="144" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="240" y="140" width="144" height="40"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="312" y="164.4">
       <tspan x="312" y="164.4">cinder-scheduler</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #f7a88a" x="160" y="80" width="144" height="40"/>
+    <rect style="fill: #ffc192" x="160" y="80" width="144" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="160" y="80" width="144" height="40"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="232" y="104.4">
       <tspan x="232" y="104.4">cinder-volume</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #f7a88a" x="160" y="200" width="144" height="40"/>
+    <rect style="fill: #ffc192" x="160" y="200" width="144" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="160" y="200" width="144" height="40"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="232" y="224.4">
       <tspan x="232" y="224.4">cinder-volume</tspan>
     </text>
   </g>
   <g>
-    <path style="fill: #f7a88a" d="M 520 52.6667 C 536,43.1667 544,40 560,40 C 576,40 584,43.1667 600,52.6667 L 600,103.333 C 584,112.833 576,116 560,116 C 544,116 536,112.833 520,103.333 L 520,52.6667z"/>
+    <path style="fill: #ffc192" d="M 520 52.6667 C 536,43.1667 544,40 560,40 C 576,40 584,43.1667 600,52.6667 L 600,103.333 C 584,112.833 576,116 560,116 C 544,116 536,112.833 520,103.333 L 520,52.6667z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 520 52.6667 C 536,43.1667 544,40 560,40 C 576,40 584,43.1667 600,52.6667 L 600,103.333 C 584,112.833 576,116 560,116 C 544,116 536,112.833 520,103.333 L 520,52.6667"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 520 52.6667 C 536,62.1667 544,65.3333 560,65.3333 C 576,65.3333 584,62.1667 600,52.6667"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="560" y="80.3333">
@@ -95,12 +95,20 @@
     </text>
   </g>
   <g>
-    <path style="fill: #f7a88a" d="M 520 232.667 C 536,223.167 544,220 560,220 C 576,220 584,223.167 600,232.667 L 600,283.333 C 584,292.833 576,296 560,296 C 544,296 536,292.833 520,283.333 L 520,232.667z"/>
+    <path style="fill: #ffc192" d="M 520 232.667 C 536,223.167 544,220 560,220 C 576,220 584,223.167 600,232.667 L 600,283.333 C 584,292.833 576,296 560,296 C 544,296 536,292.833 520,283.333 L 520,232.667z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 520 232.667 C 536,223.167 544,220 560,220 C 576,220 584,223.167 600,232.667 L 600,283.333 C 584,292.833 576,296 560,296 C 544,296 536,292.833 520,283.333 L 520,232.667"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 520 232.667 C 536,242.167 544,245.333 560,245.333 C 576,245.333 584,242.167 600,232.667"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="560" y="260.333">
       <tspan x="560" y="260.333">Storage</tspan>
       <tspan x="560" y="276.333">Backend</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #f7a88a" d="M 0 87.3333 C 8,81.8333 12,80 20,80 C 28,80 32,81.8333 40,87.3333 L 40,116.667 C 32,122.167 28,124 20,124 C 12,124 8,122.167 0,116.667 L 0,87.3333z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 0 87.3333 C 8,81.8333 12,80 20,80 C 28,80 32,81.8333 40,87.3333 L 40,116.667 C 32,122.167 28,124 20,124 C 12,124 8,122.167 0,116.667 L 0,87.3333"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 0 87.3333 C 8,92.8333 12,94.6667 20,94.6667 C 28,94.6667 32,92.8333 40,87.3333"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="20" y="109.667">
+      <tspan x="20" y="109.667">DB</tspan>
     </text>
   </g>
   <g>
