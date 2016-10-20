@@ -54,6 +54,12 @@ body {
 .medium-text {
     font-size: 26px;
 }
+.red-text {
+    color: red;
+}
+.green-text {
+    color: green;
+}
 
 
 /******************************************************************************

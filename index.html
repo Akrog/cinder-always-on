@@ -475,7 +475,7 @@ Insert paragraph of copy here. Do not exceed 40 words.
 
 template: section_layout
 
-CINDER INSIGHTS
+TIPS & TRICKS
 
 ---
 
@@ -493,13 +493,202 @@ Insert paragraph of copy here. Do not exceed 40 words.
 
 # Stopping Cinder
 
-## The right way
+**Basic questions**
 
-Insert paragraph of copy here. Do not exceed 40 words.
+- How should I stop cinder services?
+- Will this do a clean stop?
+- Is it the same for all Cinder services?
+- What's this, SysAdmin 101?
+- The answer is obvious, right?
 
-- Bullet
-- Bullet
-- Bullet
+```
+  cinder service-disable --reason "Upgrade" host@backend cinder-volume
+  sudo systemctl stop openstack-cinder-volume
+```
+???
+
+We all want our services to stop cleanly
+
+So we ask ourselves some basic questions like these ones
+
+These may seem like obvious questions, but bear with me for a little bit
+
+---
+
+# Stopping Cinder
+
+**Scenario**
+
+- Cinder services are under heavy load
+- We want to stop Cinder services ➔ Maintenance,Upgrade
+- For explanation purposes order will be Scheduler, API, Volume
+
+???
+
+Situation would be very similar for normal upgrades
+
+What we'll be discussing here also applies to other OpenStack services
+
+--
+
+**Scheduler**
+
+- We stop the scheduler with `systemctl`
+- Check resources and operations
+--
+  .green-text[**✓**]
+
+--
+
+**API**
+
+- We stop the api with `systemctl`
+- Check resources and operations
+--
+  .red-text[**✖**]
+  - See failed Attach/Detach operations
+  - Volumes stuck in *attaching/detaching* state
+- What happened?
+
+---
+
+# Stopping Cinder - Services 101
+
+- Check the systemd journal ➔ SIGTERM was sent to all processes
+- Check the code ➔ Main process will also send SIGTERM to child processes
+
+--
+- Solution ➔ systemd.kill should not be sending SIGTERM to children
+- /etc/systemd/system/multi-user.target.wants/openstack-cinder-scheduler.service
+  - `KillMode` is not defined ➔ defaults to *control-group*
+  - Add `KillMode=process`
+
+--
+
+We try again and...  .red-text[**✖**]
+
+- Fewer error cases ➔ only when *attach/detach* > 60 secs
+- *attach/detach* are synchronous operations ➔  `rpc_response_timeout` is set to 80 seconds
+
+```
+● openstack-cinder-api.service - OpenStack Cinder API Server
+   Active: failed (Result: signal) ...
+  Process: 6837 ExecStart=[...] (code=killed, signal=ALRM)
+ Main PID: 6837 (code=killed, signal=ALRM)
+```
+
+???
+
+60 seconds is a long time, but as we mentioned earlier, if we don't set our DB connections right, it can happen
+
+---
+
+# Stopping Cinder - Timeout
+
+**Oslo Service Shutdown process**
+
+- systemd.kill sends SIGTERM to main process
+- Main process asks services to `stop`
+- Waits for services to stop for `graceful_shutdown_timeout` seconds
+- If they don't stop ➔ SIGALRM
+
+--
+
+**Recommendation**
+
+- `graceful_shutdown_timeout` defaults to 60 seconds
+- `rpc_response_timeout` defaults to 60 seconds
+- `graceful_shutdown_timeout` >= `rpc_response_timeout`
+
+???
+
+If we don't touch defaults, resources should not be affected by shutdown
+
+---
+
+# Stopping Cinder - API Service
+
+.red-text[**But it still won't shutdown properly!!**]
+
+```
+● openstack-cinder-api.service - OpenStack Cinder API Server
+   Active: failed (Result: signal) ...
+  Process: 9368 ExecStart=[...] (code=killed, signal=KILL)
+ Main PID: 9368 (code=killed, signal=KILL)
+```
+
+--
+
+- There is a bug in eventlet.wsgi preventing WSGI server from stopping
+- systemctl.kill escalated from `SIGTERM` to `SIGKILL`
+  - After `TimeoutStopSec` (default: `DefaultTimeoutStopSec`)
+  - `DefaultTimeoutStopSec`
+      - Defined in /etc/systemd/system.conf
+      - Default: 90 secs
+
+???
+
+Even if it's not a clean stop, it will not leave resources in the wrong state
+
+---
+
+# Stopping Cinder - Volume Service
+
+**Cinder volume is in the data path**
+
+- Performs long operations:
+  - Creating volume from image
+  - Migrating volume
+- Insufficient default `graceful_shutdown_timeout`
+
+--
+
+**Solution**
+
+- Increase timeouts to an arbitrary number
+  - Difficult to decide good numbers
+  - Depends on cloud, backend, workload...
+- Prevent systemctl from sending kill signals
+  - Manual process ➔ More tedious
+  - More control
+
+---
+
+# Stopping Cinder - No auto-kill
+
+  - Prevent systemctl.kill from sending `SIGKILL`
+  - Change *openstack-cinder-volume.service*
+```
+ExecStop=/bin/kill -SIGTERM $MAINPID
+KillMode=none
+```
+  - Stop request ➔ `systemctl stop openstack-cinder-volume`
+  - Check resource status progress
+```
+mysql cinder -e "
+select id,status,display_name from volumes
+where not deleted and
+      status not like 'error%' and status not in ('available', 'in-use')
+      and host like '`hostname`%';"
+```
+  - Force stop ➔ `systemctl kill -s SIGKILL`
+
+---
+
+# Stopping Cinder - Summary
+
+**Checklist**
+
+- Check your service definitions
+  - `KillMode=process`
+- Properly set timeouts:
+  - `TimeoutStopSec` > `graceful_shutdown_timeout`
+  - `graceful_shutdown_timeout` >= `rpc_response_timeout`
+- Careful consideration with volume service
+- Reload your service configurations
+  - After making changes
+  - Before stopping your service
+  - `systemctl daemon-reload`
 
 ---
 
