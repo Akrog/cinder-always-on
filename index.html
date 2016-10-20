@@ -739,6 +739,25 @@ Insert paragraph of copy here. Do not exceed 40 words.
 
 ---
 
+# Service down detection
+
+How does the service down detection work?
+
+- Cinder uses DB heartbeats
+- Services report every `report_interval` seconds (default 10)
+- Down if report older than `service_down_time` seconds (default 60)
+- Fastest detection
+  - Reducing `service_down_time` value
+  - Be careful with transient DB issues
+  - Increase report frequency
+  - Leads to increment in DB queries
+
+???
+
+This is part of the basics, but I still get asked about it sometime
+
+---
+
 template: section_layout
 
 TEMPLATE SLIDE SAMPLES
