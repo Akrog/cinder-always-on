@@ -477,6 +477,10 @@ template: section_layout
 
 TIPS & TRICKS
 
+???
+
+To make cinder more reliable and minimize downtime
+
 ---
 
 # Common Bottleneck
@@ -729,13 +733,78 @@ where not deleted and
 
 # Changing Log Levels
 
-## Without service interruption
+**The issue**
 
-Insert paragraph of copy here. Do not exceed 40 words.
+- Sooner or later we'll want DEBUG log level
+- But it's not enabled
+- Changing requires
+  - Restart: `systemctl restart openstack-cinder-volume`
+  - Reload: `systemctl kill -s SIGHUP openstack-cinder-volume`
+- Both methods stop & start service
+  - Issues mentioned earlier
+  - Disrupt our cloud
 
-- Bullet
-- Bullet
-- Bullet
+--
+
+**Solution**
+
+- Minimal disruption: Sub-second
+- Hackish method
+- Requires GDB system package
+
+
+???
+
+It takes approximately 0.5 second per process
+
+---
+
+# Changing Log Levels - os-log-level.py
+
+```bash
+$ gdb -q -x os-log-level.py -ex 'py change_log_level(1234, "DEBUG")'
+```
+
+```python
+from subprocess import check_output
+
+import gdb
+
+def change_log_level(pid, level):
+    gdb.execute('attach %s' % pid)
+    gdb.execute('call PyGILState_Ensure()')
+    gdb.execute('call PyRun_SimpleString("'
+                'from oslo_log import log as __my_log; '
+                '[v.logger.setLevel(__my_log.%s) '
+                'for k, v in __my_log._loggers.items()]")' % level)
+    gdb.execute('call PyGILState_Release($$)')
+    gdb.execute('detach')
+    gdb.execute('quit')
+```
+
+???
+
+This is a simplified version of my script
+
+- Requires pid ➔ Mine uses binary names & changes all processes
+- No error control
+- Changes all log levels ➔ Specific log paths (cinder, eventlet, sqlalchemy)
+
+---
+
+# Changing Log Levels - Minimizing the impact
+
+It can be simplified with an Ansible playbook:
+  - Install *GDB server* in Overcloud nodes
+  - Install *GDB* in Undercloud
+  - Using Ansible:
+    - Locate service pid
+    - Launch `gdbserver` to attach to pid
+  - Connect from overcloud's GDB and change log levels
+
+???
+
+My script is just a PoC, so I haven't had time to improve it
 
 ---
 
