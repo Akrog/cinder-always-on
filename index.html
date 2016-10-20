@@ -479,15 +479,50 @@ TIPS & TRICKS
 
 ---
 
-# Common Bottlenecks
+# Common Bottleneck
 
-## Click to add subtitle
+**Under heavy load operations take exponentially longer to complete**
+  - Very visible in older releases
+  - More visible on API only operations
+  - Also affects non API operations
 
-Insert paragraph of copy here. Do not exceed 40 words.
+**Problem**
+  - Bottleneck on DB connections ➔ Earlier releases 1000 to 15
+  - People used to increase number of API workers
 
-- Bullet
-- Bullet
-- Bullet
+--
+
+**Solution**
+  - Configuration options
+      - `wsgi_default_pool_size`: Available greenthread (1000 before, now 100)
+      - `max_pool_size`: Maximum number of SQL connections to keep open. (5)
+      - `max_overflow`: The maximum number of sleeping SQL connections. (10 before, now 50)
+  - In Cinder it's important for all services
+
+---
+
+# Common Bottleneck (II)
+
+.left-column[
+**Defining proper values**
+
+  - API recommendation: `wsgi_default_pool_size`=`max_overflow`
+  - Cloud characterization
+      - Use [Rally](https://wiki.openstack.org/wiki/Rally) to run scenarios
+      - Use [connmon](https://bitbucket.org/zzzeek/connmon) to see connections
+  - Adjust max connection on RDBMS servers: [post on how to calculate it](https://gorka.eguileor.com/os-db-connections)
+
+**Additional Recomendation**
+
+ - Use PyMySQL library for DB connections
+ - Older default: MySQL-Python
+     - Cannot be eventlet monekypatched
+     - Blocks other greenthreads
+]
+
+.right-column[
+![connmon screeshot](assets/connmon.png)
+]
 
 ---
 
