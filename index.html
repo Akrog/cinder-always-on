@@ -227,9 +227,158 @@ if not volume.conditional_update(updates, expected, None):
 
 # HA of Cinder services
 
-## cinder-volume
+## cinder-volume - Existing support
 
-TODO: To be extended by Gorka.
+**Only Active-Passive support**
+
+- Required mutual exclusion
+- Cleanup mechanism
+  - Tracking each service's resources in the cluster
+  - Cleanup on start by the node itself
+  - Cleanup by other services in the cluster
+- Job distribution
+- Operations are not cluster aware (e.g., replication)
+
+---
+
+# HA of Cinder services
+
+## cinder-volume - Custom solutions
+
+- People tried doing Active-Active
+  - Sharing `host` configuration  .red-text[**✖**]
+      - Will breack havoc when a service starts
+      - No required mutual exclussion
+  - Customized Cinder volume service  .green-text[**✓**]
+      - Sharing `host` configuration
+      - No cleanup on service start ➔ Manually
+      - With known workloads
+      - Possibly with locks on shared directory
+
+---
+
+# HA of Cinder services
+
+## cinder-volume - Solution
+
+**Expectations:**
+
+- Tech preview in Ocata
+- Supported by some drivers
+- All features may not be supported by drivers (e.g., replication)
+
+**In the future support for advanced configurations:**
+
+- Will require individual service disable
+- Scenario: 3 clusters and 3 different backends (*G*old, *S*ilver, *B*ronze)
+    - *G* servers with cinder configured with *G* backend
+    - *S* servers with cinder with *s* backend and disabled service with *G*
+      backend
+    - *B* servers with cinder service configured with *B* backend and disabled
+      services for *G* and *S* backends
+- When *G* server goes down we can temporarily enable a couple of *G* services
+  in the *B* or *S* servers to take part of the load and add assurance to no
+  down time of *G* users.
+
+---
+
+# HA of Cinder services
+
+## cinder-volume - Implementation
+
+- Mutual exclusion
+  - DLM via Tooz (Zookeeper, Etcd, Consul...)
+  - Used for core functionality
+  - May be used by drivers
+- Job distribution
+  - Additional cluster message queues and exchanges
+  - Disable works at cluster level
+  - In the future complete disable at service level
+- Cleanup mechanism
+  - Tracking on `workers` DB table
+  - Only for cleanable resource operations
+  - Automatic cleanup by the same service on restart
+  - Fine grained manual cleanup by other servers in cluster
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa01.svg)]
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa02.svg)]
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa03.svg)]
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa04.svg)]
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa05.svg)]
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa06.svg)]
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa07.svg)]
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa08.svg)]
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa09.svg)]
+
+---
+
+# HA of Cinder services
+
+## Workers table in action
+
+.fill-width[![Insert graphic here](assets/ha_aa/ha_aa10.svg)]
 
 ---
 
@@ -237,9 +386,13 @@ TODO: To be extended by Gorka.
 
 ## cinder-backup
 
-TODO: Gorka? Key talking points:
-- Scalable backup service since Mitaka.
-- Improvements related to c-vol A/A?
+**No Active-Active support**
+- Horizontally scalable backup service since Mitaka
+- Don't mistake it for Active-Active
+- Increase workload capability of the service
+- Each node only has access to its own backups
+
+**Active-Active will come after cinder-volume work is completed**
 
 ---
 
