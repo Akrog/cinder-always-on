@@ -463,13 +463,58 @@ STORAGE HIGH AVAILABILITY
 
 # Replication v2.1
 
-## Click to add subtitle
+**Smoking Hole Disaster Recovery**
 
-Insert paragraph of copy here. Do not exceed 40 words.
+- Only use case contemplated
+- Support multiple DR sites
+- Replication type is driver/backend dependent:
+  - Per volume replication
+  - Per backend/pool
+- Failover is not automatic ➔ Admin decides when primary is dead
+- After failover
+  - Replicated resources are used from the DR site
+  - Non-replicated resources are not available
 
-- Bullet
-- Bullet
-- Bullet
+---
+
+# Replication v2.1 (II)
+
+**How it works**
+
+- Drivers report replication capability
+- Volume type: `replication_enabled='<is> True'`
+- Scheduler matches `replication_enabled` with capabilities
+- On `failover-host` request
+  - Driver changes resources
+  - Driver changes used backend location
+  - Service is disabled
+
+---
+
+# Replication v2.1 - Things missing
+
+**There's room for improvement**
+
+- OpenStack is unaware of the failover
+  - Cinder does tell anybody about it
+  - Admin must re-configure OpenStack ➔ Re-attach volumes
+- There's no secondary promotion ➔ It always say "failed over"
+- Failback not supported on all drivers
+- Freeze/Unfreeze don't work ➔ Equivalent to disabled
+- Inconsistent behavior among drivers:
+  - Treatment of non replicated volumes
+  - Some drivers don't use `replication_status`
+- Secondary sites not contacted until failover
+  - We could detect incorrect configuration at the worst time
+
+**We will be working on some of these in this release**
+
+???
+
+Freeze: Do not allow create/delete actions
+
+Disable only prevents operations going through the scheduler
+
 
 ---
 
