@@ -383,6 +383,14 @@ table tbody tr:nth-child(even) {
  * Slide Backgrounds
  *****************************************************************************/
 
+.fill-width {
+    color: red;
+    position: fixed;
+    left: 121px;
+    top: 190px;
+    width: 1016px;
+}
+
 .fill-width img {
     width: 100%;
 }
