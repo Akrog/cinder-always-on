@@ -337,13 +337,16 @@ if not volume.conditional_update(updates, expected, None):
 
 ## cinder-backup
 
-**No Active-Active support**
+**Supported when decoupled**
 - Horizontally scalable backup service since Mitaka
-- Don't mistake it for Active-Active
-- Increase workload capability of the service
-- Each node only has access to its own backups
+- A/A enabled with `backup_use_same_host` defaults to False
 
-**Active-Active will come after cinder-volume work is completed**
+**Limitations**
+- There can only be 1 cluster:
+  - Only 1 backup backend
+  - No coupled and decoupled backup service combination
+- API races
+- Cleanup from another node is manual
 
 ---
 
@@ -953,27 +956,12 @@ This is part of the basics, but I still get asked about it sometime
 
 ---
 
-# Legal Notices and Disclaimers
-
-Intel disclaims all express and implied warranties, including without
-limitation, the implied warranties of merchantability, fitness for a particular
-purpose, and non-infringement, as well as any warranty arising from course of
-performance, course of dealing, or usage in trade.
-
-Intel, the Intel logo and others are trademarks of Intel Corporation in the
-U.S. and/or other countries.
-
-*Other names and brands may be claimed as the property of others.
-
----
-
 template: thank_you
 
 # THANK YOU
 
 **Presentation available at:**
 
-- http://github.com/intelsdi-x/cinder-always-on
 - http://akrog.github.io/cinder-always-on
 
 **Michal Dulko**
@@ -986,6 +974,20 @@ template: thank_you
 ![twitter](assets/twitter.png) [twitter.com/geguileo](https://twitter.com/geguileo)
 ![blog](assets/wp.png)   [gorka.eguileor.com](https://gorka.eguileor.com)
 ![irc](assets/irc.png)   [geguileo (freenode)](irc://chat.freenode.net/geguileo,isnick)
+
+---
+
+# Legal Notices and Disclaimers
+
+Intel disclaims all express and implied warranties, including without
+limitation, the implied warranties of merchantability, fitness for a particular
+purpose, and non-infringement, as well as any warranty arising from course of
+performance, course of dealing, or usage in trade.
+
+Intel, the Intel logo and others are trademarks of Intel Corporation in the
+U.S. and/or other countries.
+
+*Other names and brands may be claimed as the property of others.
 
 ---
 

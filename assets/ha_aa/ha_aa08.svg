@@ -102,7 +102,7 @@
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 80.3552 141.252 L 306.653,141.252 L 306.653,199.054 C 261.394,189.42 238.764,189.42 193.504,199.054 C 148.245,208.687 125.615,208.687 80.3552,199.054 L 80.3552,141.252"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="193.504" y="161.336">
       <tspan x="193.504" y="161.336">volumes table</tspan>
-      <tspan x="193.504" y="177.336">volume 1 - creating</tspan>
+      <tspan x="193.504" y="177.336">volume 1 - downloading</tspan>
     </text>
   </g>
   <g>
@@ -129,5 +129,10 @@
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="799.317" y="30.023">
       <tspan x="799.317" y="30.023">glance</tspan>
     </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="370.258" y1="187.81" x2="316.034" y2="172.757"/>
+    <polygon style="fill: #000000" points="308.808,170.751 319.781,168.608 316.034,172.757 317.106,178.244 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="308.808,170.751 319.781,168.608 316.034,172.757 317.106,178.244 "/>
   </g>
 </svg>
