@@ -4,7 +4,7 @@
   <g>
     <rect style="fill: #ffffff" x="-60" y="-20" width="920" height="360"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-60" y="-20" width="920" height="360"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="400" y="163.9">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="400" y="163.9">
       <tspan x="400" y="163.9"></tspan>
     </text>
   </g>
@@ -17,11 +17,11 @@
   </g>
   <g>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #507dbc" x="510.256" y="94.8056" width="175.721" height="21.9684"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="598.117" y="109.69">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="598.117" y="109.69">
       <tspan x="598.117" y="109.69">cluster</tspan>
     </text>
   </g>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="598.116" y="105.79">
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Montserrat;font-style:normal;font-weight:normal" x="598.116" y="105.79">
     <tspan x="598.116" y="105.79"></tspan>
   </text>
   <g>
@@ -55,13 +55,13 @@
       <tspan x="410.258" y="188.477">Database</tspan>
     </text>
   </g>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="597.838" y="160.049">
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Montserrat;font-style:normal;font-weight:normal" x="597.838" y="160.049">
     <tspan x="597.838" y="160.049"></tspan>
   </text>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="230" y="299">
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Montserrat;font-style:normal;font-weight:normal" x="230" y="299">
     <tspan x="230" y="299"></tspan>
   </text>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="398.178" y="14.5421">
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Montserrat;font-style:normal;font-weight:normal" x="398.178" y="14.5421">
     <tspan x="398.178" y="14.5421"></tspan>
   </text>
   <g>
@@ -73,7 +73,7 @@
       <tspan x="407.261" y="58.8297">Queue</tspan>
     </text>
   </g>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="407.26" y="54.8298">
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Montserrat;font-style:normal;font-weight:normal" x="407.26" y="54.8298">
     <tspan x="407.26" y="54.8298"></tspan>
   </text>
   <g>
@@ -107,7 +107,7 @@
   <g>
     <path style="fill: #ffffff" d="M 80.3552 141.252 L 306.653,141.252 L 306.653,199.054 C 261.394,189.42 238.764,189.42 193.504,199.054 C 148.245,208.687 125.615,208.687 80.3552,199.054 L 80.3552,141.252z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 80.3552 141.252 L 306.653,141.252 L 306.653,199.054 C 261.394,189.42 238.764,189.42 193.504,199.054 C 148.245,208.687 125.615,208.687 80.3552,199.054 L 80.3552,141.252"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="193.504" y="161.336">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="193.504" y="161.336">
       <tspan x="193.504" y="161.336">volumes table</tspan>
       <tspan x="193.504" y="177.336">volume 1 - creating</tspan>
     </text>
@@ -122,7 +122,7 @@
   <g>
     <path style="fill: #ffffff" d="M 78.941 218.182 L 305.239,218.182 L 305.239,275.984 C 259.979,266.35 237.35,266.35 192.09,275.984 C 146.83,285.617 124.201,285.617 78.941,275.984 L 78.941,218.182z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 78.941 218.182 L 305.239,218.182 L 305.239,275.984 C 259.979,266.35 237.35,266.35 192.09,275.984 C 146.83,285.617 124.201,285.617 78.941,275.984 L 78.941,218.182"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="192.09" y="238.266">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:normal" x="192.09" y="238.266">
       <tspan x="192.09" y="238.266">workers table</tspan>
       <tspan x="192.09" y="254.266">volume 1 - creating - vol1</tspan>
     </text>
